@@ -1,2 +1,3 @@
-# CQS
-CQS - Command-query separation principle
+## CQS - Command-query separation principle
+
+[![CQS, CQRS, Event Sourcing - Разделение запросов и модификации данных](https://img.youtube.com/vi/T2tRc80Q8Qw/0.jpg)](https://www.youtube.com/watch?v=T2tRc80Q8Qw)
