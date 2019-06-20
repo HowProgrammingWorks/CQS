@@ -4,9 +4,11 @@ class Adder {
   constructor(x) {
     this.value = x;
   }
+
   getValue() {
     return this.value;
   }
+
   add(x) {
     this.value += x;
   }

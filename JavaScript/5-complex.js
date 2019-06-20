@@ -5,15 +5,19 @@ class BankAccount {
     this.name = name;
     this.balance = 0;
   }
+
   getBalance() {
     return this.balance;
   }
+
   available(amount) {
     return this.balance >= amount;
   }
+
   withdraw(amount) {
     this.balance -= amount;
   }
+
   income(amount) {
     this.balance += amount;
   }
@@ -23,6 +27,7 @@ class Bank {
   constructor() {
     this.accounts = new Map();
   }
+
   transfer(from, to, amount) {
     const source = this.accounts.get(from);
     const destination = this.accounts.get(to);
@@ -32,6 +37,7 @@ class Bank {
     destination.income(amount);
     return true;
   }
+
   total() {
     let sum = 0;
     for (const account of this.accounts.values()) {
@@ -40,6 +46,7 @@ class Bank {
     }
     return sum;
   }
+
   openAccount(name, amount = 0) {
     if (this.accounts.get(name)) return false;
     const account = new BankAccount(name);
