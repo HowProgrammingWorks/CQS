@@ -1,6 +1,6 @@
 'use strict';
 
-const adder = value => x => {
+const adder = (value) => (x) => {
   if (x === undefined) return value;
   value += x;
 };
