@@ -1,8 +1,15 @@
 'use strict';
 
-const adder = (value) => (x) => {
-  if (x === undefined) return value;
-  value += x;
+const adder = (initial) => {
+  let value = initial;
+  return (x) => {
+    let result;
+    if (x !== undefined) {
+      value += x;
+      result = value;
+    }
+    return result;
+  };
 };
 
 const a1 = adder(2);
