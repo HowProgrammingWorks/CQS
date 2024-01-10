@@ -1,16 +1,6 @@
 'use strict';
 
-const adder = (initial) => {
-  let value = initial;
-  return (x) => {
-    let result;
-    if (x !== undefined) {
-      value += x;
-      result = value;
-    }
-    return result;
-  };
-};
+const adder = (value) => (x) => (x ? void (value += x) : value);
 
 const a1 = adder(2);
 
