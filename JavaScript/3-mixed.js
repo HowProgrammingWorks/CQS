@@ -6,7 +6,8 @@ class Adder {
   }
 
   add(x) {
-    return this.value += x;
+    this.value += x;
+    return this.value;
   }
 }
 
